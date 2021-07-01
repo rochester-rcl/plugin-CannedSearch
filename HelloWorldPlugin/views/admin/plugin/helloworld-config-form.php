@@ -10,13 +10,15 @@
             <?php echo __("Search using the specified categories"); ?>
         </p>
       <?php 
-         
         $item_types = get_item_types();
         $element = new Zend_Form_Element_Multiselect("SelectForm");
         $element->setLabel("SelectForm");
         $element->setMultiOptions(
          $item_types,
         );
+        $options=get_option('SelectForm'); 
+        $vals=unserialize($options); 
+        $element->setValue($vals); 
         // serialize the ids and values 
         echo $element;
         ?> 
