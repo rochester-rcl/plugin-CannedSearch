@@ -1,7 +1,7 @@
 <?php
 define('HELLO_WORLD_PLUGIN_DIR', dirname(__FILE__));
-require_once dirname(__FILE__) . '/helpers/helloworldfunction.php';
-class HelloWorldPlugin extends Omeka_Plugin_AbstractPlugin
+require_once dirname(__FILE__) . '/helpers/cannedsearchfunction.php';
+class CannedSearchPlugin extends Omeka_Plugin_AbstractPlugin
 {
     protected $_hooks = [
         'public_items_show', 
