@@ -34,7 +34,7 @@ class CannedSearchPlugin extends Omeka_Plugin_AbstractPlugin
 
     public function hookConfigForm()
     {
-      echo get_view()->partial('plugin/helloworld-config-form.php');
+      echo get_view()->partial('plugin/cannedsearch-config-form.php');
     }
 
     public function hookConfig($args)
