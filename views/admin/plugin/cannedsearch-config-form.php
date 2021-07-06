@@ -22,9 +22,5 @@
         // serialize the ids and values 
         echo $element;
         ?> 
-       
-          
-     
-    
     </div>
 </div>

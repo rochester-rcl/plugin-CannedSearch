@@ -1,5 +1,4 @@
 <?php
-define('HELLO_WORLD_PLUGIN_DIR', dirname(__FILE__));
 require_once dirname(__FILE__) . '/helpers/cannedsearchfunction.php';
 class CannedSearchPlugin extends Omeka_Plugin_AbstractPlugin
 {
@@ -45,13 +44,5 @@ class CannedSearchPlugin extends Omeka_Plugin_AbstractPlugin
         set_option('SelectForm', $serialized_value); 
 
     }
-
-
-
-
-    
-    
-
-   
 }
 
